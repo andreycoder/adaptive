@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700|Didact+Gothic|Merriweather+Sans:300,400,700,700i,800')
+
+$width-site:1920px
+$width-container:1170px
+
+
+.container
+  margin: 0 auto
+  max-width: $width-container
+
+.body
+  background-color: #ffffff
+
+.top-bar
+  background-color: #f6f6f6
+  .top-bar__flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .top-bar__items
+      margin: 0
+      padding: 3.5px 0
+      display: flex
+      justify-content: flex-start
+      list-style: none
+      .top-bar__item
+        margin-right: 40px
+        &:last-child
+          margin-right: 0
+        .top-bar__link
+          text-decoration: none
+          color: #7e7e7e
+          font-family: Merriweather Sans
+          font-size: 11px
+          font-weight: 600
+          line-height: 19px
+          text-transform: uppercase
+          -webkit-transition: all 0.3s
+          -moz-transition: all 0.3s
+          -o-transition: all 0.3s
+          &:hover
+            color: #444444
+
+
+.bottom-bar
+  margin: 16px 0
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  .logo
+    display: flex
+    align-items: flex-end
+    padding-bottom: 15px
+  .logo__link
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    text-decoration: none
+    .logo__text
+      color: #454545
+      font-family: "Merriweather Sans"
+      font-size: 44px
+      font-weight: 700
+      line-height: 19px
+      text-transform: uppercase
+  .bottom-bar__right
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    .search
+      width: 260px
+      display: flex
+      justify-content: space-between
+      flex-wrap: nowrap
+      border: 1px solid #e1e1e1
+      padding: 11px
+      .search__input
+        width: 100%
+        padding-right: 16px
+        border: none
+        color: #888888
+        font-family: "Trebuchet MS"
+        font-size: 13px
+        font-weight: 400
+        line-height: 19px
+        &:focus
+          outline: none
+      .search__submit
+        color: #888888
+    .menu
+      .menu__items
+        list-style: none
+        display: flex
+        .menu__item
+          margin-right: 50px
+          &:last-child
+            margin: 0
+        .menu__link
+          text-decoration: none
+          color: #565656
+          font-family: Cousine
+          font-size: 14px
+          font-weight: 700
+          line-height: 19px
+          text-transform: uppercase
+          &:hover
+            color: black
+
+
+.slider
+  height: 1070px
+  margin: 0 auto
+  background-color: #cccccc
+
